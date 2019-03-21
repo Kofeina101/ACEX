@@ -28,6 +28,33 @@
 ] call CBA_settings_fnc_init;
 
 [
+    QGVAR(thirstQuenched),
+    "SLIDER",
+    [LSTRING(ThirstQuenched_DisplayName), LSTRING(ThirstQuenched_Description)],
+    LSTRING(DisplayName),
+    [0.1, 10, 1, 1],
+    true
+] call CBA_settings_fnc_init;
+
+[
+    QGVAR(hungerSatiated),
+    "SLIDER",
+    [LSTRING(HungerSatiated_DisplayName), LSTRING(HungerSatiated_Description)],
+    LSTRING(DisplayName),
+    [0.1, 10, 1, 1],
+    true
+] call CBA_settings_fnc_init;
+
+[
+    QGVAR(affectAdvancedFatigue),
+    "CHECKBOX",
+    [LSTRING(AffectAdvancedFatigue_DisplayName), LSTRING(AffectAdvancedFatigue_Description)],
+    LSTRING(DisplayName),
+    true,
+    true
+] call CBA_settings_fnc_init;
+
+[
     QGVAR(hudType),
     "LIST",
     [LSTRING(HudType_DisplayName), LSTRING(HudType_Description)],
